@@ -1,0 +1,30 @@
+.container {
+    border: 2px solid black;
+    margin: auto;
+    height: calc(100vh - 100px);
+    width: 80%;
+    margin-top: 20px;
+
+    .timer-top {    
+        height: 55%;
+        display: flex;
+        .timer {
+            width: 40%;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .timer-input {
+            width: 60%;
+            border: 2px solid black;
+            margin: 10px 10px 10px 0;
+        }
+    }
+
+    .timer-bottom {
+        display: flex;
+        height: 45%;    
+        .bottom {
+            width: 50%;
+        }
+    }
+}

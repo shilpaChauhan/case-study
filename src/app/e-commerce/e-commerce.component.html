@@ -1,0 +1,22 @@
+<div class="category">
+<div class="category-header">
+    <div (click)="gridView=true;"><i class="fa fa-th-large"></i></div>
+    <hr />
+    <div (click)="gridView=false;"><i class="fa fa-bars"></i></div>
+    <hr />
+    <div (click)="reloadData()"><i class="fa fa-refresh"></i></div>
+    <mat-form-field>
+        <mat-label>Filter By Price</mat-label>
+        <mat-select name="byPrice" (selectionChange)="filterByPrice($event)" [(ngModel)]="initialPrice">
+            <mat-option *ngFor="let price of priceList" [value]="price">
+                {{ price }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<div class="category-list" [ngClass]="{'list-selected': !gridView}">
+    <div *ngFor="let item of categoryList" class="category-grid-item" [ngClass]="{'selected': !gridView}">
+        <div class="price">Product Price: ${{item.price}}</div>
+    <div>
+</div>
+</div>

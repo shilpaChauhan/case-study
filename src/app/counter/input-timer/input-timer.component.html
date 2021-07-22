@@ -1,0 +1,15 @@
+
+<div class="input-container">
+    <div class="input-section">
+        <div class="input-label">Enter Timer Limit</div>
+        <div>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <input matInput [(ngModel)]="limit">
+            </mat-form-field>
+        </div>
+    </div>
+    <div>
+        <button mat-flat-button color="primary" class (click)="startPause()">Start/Pause</button>
+        <button mat-flat-button color="primary" (click)="reset()">Reset</button>
+    </div>
+</div>

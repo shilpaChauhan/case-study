@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="timer-top">
+        <app-timer class="timer" [timerDetails]="timerDetails" ></app-timer>
+        <app-input-timer  class="timer-input" (onClickAction)="actionTriggered($event)"></app-input-timer>
+    </div>
+    <div class="timer-bottom">
+       <app-time-stamps class="bottom" [timeStamp]="timeStamp"></app-time-stamps>
+       <app-click-count class="bottom" [pauseCount]="pauseCount" [startCount]="startCount"></app-click-count>
+    </div>
+</div>

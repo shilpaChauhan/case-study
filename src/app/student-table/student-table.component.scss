@@ -1,0 +1,22 @@
+.point {
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;  
+}
+
+th, td {
+    width: 110px;
+    height: 50px;
+}
+
+.center {
+   margin: auto;
+   margin-top: 10%;
+}
+
+td {
+    text-align: center;
+}

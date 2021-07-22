@@ -1,0 +1,21 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .input-section {
+        display: flex;
+        .input-label {
+            align-items: center;
+            display: flex;
+            padding-right: 15px;
+        }
+    }
+
+    button {
+        margin-right: 10px;
+        background-color: grey;
+    }
+}
